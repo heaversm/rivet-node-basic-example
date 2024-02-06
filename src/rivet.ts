@@ -18,7 +18,7 @@ let result = await runGraphInFile(project, {
     externalFunctions: {},
     onUserEvent: {},
     openAiKey: openAiKey
-  });
+  } as RunGraphOptions);
 
 // Return graph output of the run
 console.log(result.response.value);
